@@ -15,58 +15,32 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Co-Founder</h4>
-                <h5>CallHQ.ai</h5>
+                <h4>Lead Backend & DevOps Engineer</h4>
+                <h5>Stellar Code · Remote</h5>
               </div>
               <h3>NOW</h3>
             </div>
             <p>
-              Building CallHQ.ai, a voice AI platform for
-              automating customer calls, support, and conversions.
+              Lead a team of backend and DevOps engineers. Manage AWS infrastructure
+              (EC2, ECS, Fargate, Lambda) and Kubernetes clusters. Built CI/CD
+              pipelines with Jenkins and GitHub Actions. Set up Grafana and Prometheus
+              for real-time monitoring. Improved application uptime from 50% to 85%
+              across systems serving 5M+ concurrent users.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Adobe</h4>
-                <h5>6+ years · Noida</h5>
+                <h4>Fullstack Developer</h4>
+                <h5>Element Zero Labs · Pune</h5>
               </div>
-              <h3>2017–24</h3>
+              <h3>2021–23</h3>
             </div>
             <p>
-              Senior Lead Software Engineer (Feb 2024 – May 2024). Lead Software
-              Engineer (Feb 2021 – Feb 2024). Software Engineer II (Dec 2017 –
-              Feb 2021): internationalization, globalization, and localization for
-              Adobe Technical Communication Suite; functional and linguistic testing
-              strategy; in-house tooling; collaboration with product and engineering
-              for high-quality localized releases.
-            </p>
-          </div>
-          <div className="career-info-box">
-            <div className="career-info-in">
-              <div className="career-role">
-                <h4>Consultant</h4>
-                <h5>Genpact Headstrong </h5>
-              </div>
-              <h3>2016–17</h3>
-            </div>
-            <p>
-              Sep 2016 – Nov 2017. Developed and maintained WCF services consumed
-              by the UI; deployment support across environments; NUnit tests and
-              coverage; bug fixes from QA and users; database work.
-            </p>
-          </div>
-          <div className="career-info-box">
-            <div className="career-info-in">
-              <div className="career-role">
-                <h4>Sf Engineer</h4>
-                <h5>Infogain</h5>
-              </div>
-              <h3>2013-16</h3>
-            </div>
-            <p>
-              Software engineering across enterprise projects, contributing to
-              design, development, and delivery of business applications.
+              Built Python and Node.js backend services, REST APIs, webhooks, and
+              caching layers with Redis. Developed microservices architecture,
+              integrated GraphQL APIs with frontend systems, and worked on payment
+              systems, decentralized systems, and custodial wallet infrastructure.
             </p>
           </div>
         </div>

@@ -5,32 +5,25 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "CallHQ",
-    category: "Voice AI Calling Platform",
-    tools: "Voice AI, Calling Automation, CRM Integrations",
-    image: "/images/callhq.png",
-    link: "https://callhq.ai",
+    title: "Referral & Commission System",
+    category: "Node.js, Python, AWS, Solana",
+    tools: "20-level MLM commission plan, Solana blockchain, live on mainnet since July 2024",
+    image: "/images/referral.png",
+    link: "https://github.com/DhruvGodambe",
   },
   {
-    title: "Whatsapp Automation",
-    category: "WABA Application",
-    tools: "WhatsApp Business API, Workflow Automation, Notifications",
-    image: "/images/whatsapp.png",
-    link: "https://whatsapp.callhq.ai",
+    title: "Social Media Platform",
+    category: "Node.js, React.js, MongoDB, AWS",
+    tools: "Posts, Groups, WebSockets for real-time messaging, Admin panel",
+    image: "/images/social.png",
+    link: "https://github.com/DhruvGodambe",
   },
   {
-    title: "Broki",
-    category: "Real Estate Platform for FnB Industry",
-    tools: "Property Discovery, Lead Management, Marketplace Workflows",
-    image: "/images/broki.png",
-    link: "https://broki.in",
-  },
-  {
-    title: "Orrdr.com",
-    category: "Ecommerce Platform and Mobile App",
-    tools: "Ecommerce, Mobile Experience, Order Management",
-    image: "/images/orrdr.png",
-    link: "https://orrdr.com",
+    title: "GitHub Actions + AWS ECS Pipeline",
+    category: "GitHub Actions, AWS ECS, Fargate, ECR",
+    tools: "Docker image builds, ArgoCD-triggered deployments, automated test & build stage",
+    image: "/images/pipeline.png",
+    link: "https://github.com/DhruvGodambe",
   },
 ];
 
