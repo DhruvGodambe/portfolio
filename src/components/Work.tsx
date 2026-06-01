@@ -1,28 +1,34 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect, useRef } from "react";
 import "./styles/Work.css";
-import WorkImage from "./WorkImage";
-import { MdArrowBack, MdArrowForward } from "react-icons/md";
+import { MdArrowBack, MdArrowForward, MdArrowOutward } from "react-icons/md";
 
 const projects = [
   {
-    title: "Referral & Commission System",
-    category: "Node.js, Python, AWS, Solana",
-    tools: "20-level MLM commission plan, Solana blockchain, live on mainnet since July 2024",
-    image: "/images/referral.png",
+    title: "MySkillKart",
+    category: "AI Agents, Marketplace, skills.md",
+    tools:
+      "Marketplace to buy and sell AI agent skills. Creators publish skills.md files; users download and attach them to Claude Cowork, Cursor, Codex, and other agents for extended capabilities.",
+    link: "https://myskillkart.com",
+  },
+  {
+    title: "Solana Referral Model with Multi Level Commission",
+    category: "Rust, Node.js, React.js, AWS",
+    tools:
+      "Dapp with a 20-level compensation plan. Commission distribution on Solana blockchain. Live on mainnet since July 2024.",
+    link: "https://frogbar-dapp-frontend.vercel.app/",
+  },
+  {
+    title: "Custom DAO Platform on Polygon",
+    category: "Solidity, Ethers.js, Node.js, AWS",
+    tools:
+      "Community DAO treasury for crypto assets. Governance contract for funding proposals and treasury decisions.",
     link: "https://github.com/DhruvGodambe",
   },
   {
-    title: "Social Media Platform",
-    category: "Node.js, React.js, MongoDB, AWS",
-    tools: "Posts, Groups, WebSockets for real-time messaging, Admin panel",
-    image: "/images/social.png",
-    link: "https://github.com/DhruvGodambe",
-  },
-  {
-    title: "GitHub Actions + AWS ECS Pipeline",
-    category: "GitHub Actions, AWS ECS, Fargate, ECR",
-    tools: "Docker image builds, ArgoCD-triggered deployments, automated test & build stage",
-    image: "/images/pipeline.png",
+    title: "Solana Arbitrage & Liquidity Bot",
+    category: "Rust, Node.js, React.js, AWS",
+    tools:
+      "Arbitrage across Raydium, Orca, and Meteora DEXes. Adds and removes liquidity from high-yield pools based on volume and yield.",
     link: "https://github.com/DhruvGodambe",
   },
 ];
@@ -30,6 +36,26 @@ const projects = [
 const Work = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
+  const trackContainerRef = useRef<HTMLDivElement>(null);
+  const slideRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    const syncSlideHeight = () => {
+      const container = trackContainerRef.current;
+      if (!container) return;
+      const maxHeight = slideRefs.current.reduce(
+        (max, slide) => Math.max(max, slide?.offsetHeight ?? 0),
+        0
+      );
+      if (maxHeight > 0) {
+        container.style.minHeight = `${maxHeight}px`;
+      }
+    };
+
+    syncSlideHeight();
+    window.addEventListener("resize", syncSlideHeight);
+    return () => window.removeEventListener("resize", syncSlideHeight);
+  }, []);
 
   const goToSlide = useCallback(
     (index: number) => {
@@ -61,7 +87,6 @@ const Work = () => {
         </h2>
 
         <div className="carousel-wrapper">
-          {/* Navigation Arrows */}
           <button
             className="carousel-arrow carousel-arrow-left"
             onClick={goToPrev}
@@ -79,16 +104,22 @@ const Work = () => {
             <MdArrowForward />
           </button>
 
-          {/* Slides */}
-          <div className="carousel-track-container">
+          <div className="carousel-track-container" ref={trackContainerRef}>
             <div
               className="carousel-track"
               style={{
-                transform: `translateX(-${currentIndex * 100}%)`,
+                ["--slide-count" as string]: projects.length,
+                transform: `translateX(-${(currentIndex * 100) / projects.length}%)`,
               }}
             >
               {projects.map((project, index) => (
-                <div className="carousel-slide" key={index}>
+                <div
+                  className="carousel-slide"
+                  key={project.title}
+                  ref={(el) => {
+                    slideRefs.current[index] = el;
+                  }}
+                >
                   <div className="carousel-content">
                     <div className="carousel-info">
                       <div className="carousel-number">
@@ -103,14 +134,18 @@ const Work = () => {
                           <span className="tools-label">Tools & Features</span>
                           <p>{project.tools}</p>
                         </div>
+                        {project.link && (
+                          <a
+                            className="carousel-link"
+                            href={project.link}
+                            target="_blank"
+                            rel="noreferrer"
+                            data-cursor="disable"
+                          >
+                            View project <MdArrowOutward />
+                          </a>
+                        )}
                       </div>
-                    </div>
-                    <div className="carousel-image-wrapper">
-                      <WorkImage
-                        image={project.image}
-                        alt={project.title}
-                        link={project.link}
-                      />
                     </div>
                   </div>
                 </div>
@@ -118,7 +153,6 @@ const Work = () => {
             </div>
           </div>
 
-          {/* Dot Indicators */}
           <div className="carousel-dots">
             {projects.map((_, index) => (
               <button

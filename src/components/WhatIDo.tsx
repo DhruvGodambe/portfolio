@@ -87,21 +87,21 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>BACKEND & APIs</h3>
-              <h4>Production-Grade Services at Scale</h4>
+              <h3>BLOCKCHAIN & SMART CONTRACTS</h3>
+              <h4>Solana, Solidity & Production dApps</h4>
               <p>
-                Building reliable backend systems with Node.js and Python —
-                microservices, REST APIs, real-time pipelines, and payment
-                integrations deployed for millions of concurrent users.
+                Implementing and deploying smart contracts — Solana Rust programs,
+                Solidity DAOs and treasuries, NFT collections, cross-chain bridges,
+                and commission systems with unit tests and mainnet launches.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Node.js</div>
-                <div className="what-tags">Python</div>
-                <div className="what-tags">REST &amp; GraphQL</div>
-                <div className="what-tags">Redis</div>
-                <div className="what-tags">MongoDB</div>
-                <div className="what-tags">PostgreSQL</div>
+                <div className="what-tags">Solana / Rust</div>
+                <div className="what-tags">Solidity</div>
+                <div className="what-tags">Ethers.js</div>
+                <div className="what-tags">Wormhole</div>
+                <div className="what-tags">DeFi / DEX</div>
+                <div className="what-tags">AWS</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -125,21 +125,21 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>DEVOPS &amp; INFRA</h3>
-              <h4>Cloud Infrastructure & CI/CD</h4>
+              <h3>FULLSTACK &amp; BACKEND</h3>
+              <h4>Node.js, React &amp; Production Ops</h4>
               <p>
-                Provisioning and operating cloud infrastructure on AWS, building
-                CI/CD pipelines, containerizing workloads with Docker and
-                Kubernetes, and running observability stacks in production.
+                Building fullstack dapps and backends in Node.js and Rust — REST
+                APIs, React frontends, Redis caching, Docker deployments on AWS,
+                and CI/CD pipelines for apps serving 5M+ users.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">AWS (EC2, ECS, Fargate)</div>
+                <div className="what-tags">Node.js</div>
+                <div className="what-tags">React.js</div>
+                <div className="what-tags">Rust</div>
                 <div className="what-tags">Docker</div>
-                <div className="what-tags">Kubernetes</div>
-                <div className="what-tags">Jenkins</div>
-                <div className="what-tags">GitHub Actions</div>
-                <div className="what-tags">Grafana &amp; Prometheus</div>
+                <div className="what-tags">AWS EC2 &amp; Lambda</div>
+                <div className="what-tags">CI/CD</div>
               </div>
               <div className="what-arrow"></div>
             </div>

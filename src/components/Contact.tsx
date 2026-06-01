@@ -28,7 +28,9 @@ const Contact = () => {
               </a>
             </p>
             <h4>Education</h4>
-            <p>BE Electronics Engineering, Mumbai University — 2018–2024</p>
+            <p>
+              BE Electronics Engineering, Mumbai University (DMCE) — 2018–2024
+            </p>
           </div>
           <div className="contact-box">
             <h4>Social</h4>

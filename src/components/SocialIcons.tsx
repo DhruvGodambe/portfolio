@@ -75,7 +75,7 @@ const SocialIcons = () => {
       </div>
       <a
         className="resume-button"
-        href="/Dhruv_Godambe.pdf"
+        href="/Dhruv_Godambe_CV.pdf"
         target="_blank"
         rel="noreferrer"
       >

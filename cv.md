@@ -1,62 +1,60 @@
-# CV -- Alex Chen
+# CV — Dhruv Godambe
 
-**Location:** Thane, Maharashtra, India
 **Email:** dhruvrockstone@gmail.com
-**LinkedIn:** linkedin.com/in/dhruvgodambe
-**GitHub:** github.com/DhruvGodambe
+**Mobile:** +91-8551944773
+**LinkedIn:** https://www.linkedin.com/in/dhruvgodambe/
+**GitHub:** https://github.com/DhruvGodambe
 
-## Professional Summary
+## Introduction
 
-I am a Backend and DevOps Engineer with 3+ years of experience building and operating production systems at scale. I specialize in cloud infrastructure on AWS (EC2, ECS, Fargate), CI/CD pipelines with Jenkins and GitHub Actions, and containerized deployments with Docker. I have hands-on experience with Linux administration, observability tooling (Grafana, Prometheus), and microservices development with Node.js and Python — deploying systems that serve 5M+ concurrent users. My background spans the full lifecycle from API development to infrastructure
-provisioning and production monitoring.
+I am a fullstack developer with specialization in blockchain. My major experience comes from implementing smart contracts, writing unit test cases and deploying applications to production. I can write backend systems in nodejs and rust with CI/CD pipelines and containerize it on docker. I have experience in launching and maintaining production applications with 5M+ users.
 
-## Work Experience
+## Industrial Experience
 
-### Stellar code -- Remote
-**Lead Backend & Devops Engineer**
-2024 - current
+### Stellar Code — Thane, India
+**Senior Blockchain Developer**
+March 2024 - Ongoing
 
-- Lead a team of backend and DevOps engineers. I review pull requests by developers and merge with production code. I set up and manage AWS infrastructure including EC2 instances and ECS containers for deployment. I
-integrate and deploy the final code, monitor and maintain it in production environments.
-- Implemented AWS Secret Manager service to securely save private keys and load them into the code only during runtime.
-- Built automation scripts in Bash and Python for infrastructure management. Managed version control workflows using Git. Monitored and maintained live servers handling 5M+ concurrent users.
-- Deployed and managed applications on AWS EC2, ECS, Fargate and Lambda. Configured load balancing and auto-scaling for high availability. This increased the uptime of application from 50% to 85%.
-- Dockerized the backend code and hosted it on the kubernetes cluster on AWS. Used Jenkins and Github actions to set up CI/CD pipelines. Created a sandbox environment for dev testing and QA. Improved the load time of APIs by optimizing the database queries.
-- Setup Grafana and Prometheus for real time monitoring of the system
+- Lead a team of frontend, backend and blockchain developers. Review pull requests, merge production code, integrate and deploy on AWS EC2 and AWS Lambda. Create Docker images for deployment.
+- **Solana Rust Development:** airdrop smart contract with 10k+ transactions, multi level commission distribution smart contract, arbitrage smart contract.
+- **Solidity Development:** DAO with governance and treasury smart contracts, payment distribution system using a cross chain bridge, NFT collections with OpenSea setup and metadata hosting. Node.js and Python for backend operations.
+- Handled live server with 5M+ users. Event listening and real-time data monitoring.
 
-### Element Zero Labs -- Pune, India
+### Element Zero Labs — Pune, India
+**Blockchain Developer**
+Feb 2022 - Jul 2023
+
+- Worked with a team of 4 blockchain developers. Planned and executed smart contract infrastructure: off chain crypto price medianizer, NFT marketplace, Staking pools, Meta transactions, Decentralised Exchange, Cross chain bridge using wormhole protocol, and Custodial wallet system.
+- Launched IDO for tokens using launchpads like pinksale and gempad.
+
+### Element Zero Labs — Remote
 **Fullstack Developer**
-2021-2023
+Dec 2021 - Feb 2022
 
-- Worked with a team of 4 backend engineers. Planned and executed backend infrastructure for products
-including API services, payment systems, decentralized systems, and custodial wallet systems.
-- Built Python and Node.js backend services. Implemented REST APIs and webhooks. Developed caching layers
-using Redis. Managed database operations and query optimization.
-- Managed version control using Git. Automated deployment processes with Python scripts. Worked with devops
-engineer to containerize applications using Docker.
-- Built backend systems using Python with MVC framework architecture. Developed microservices-based
-backend with Node.js. Implemented real-time data processing and state management.
-- Integrated backend GraphQL APIs with frontend systems. Wrote automated test cases and deployment scripts.
-- Maintained code quality through code reviews and Git workflows.
-
-## Projects
-
-- **FraudShield** (Open Source) -- Real-time fraud detection framework. Kafka Streams + feature store + model serving. 500+ GitHub stars
-- **LLM Eval Toolkit** (Open Source) -- Evaluation framework for LLM applications. Supports custom metrics, regression testing, CI integration
-
-- **Referral model with multi level commission** (Node.js, Python, AWS) -- Built an app with referral model that pays out commissions based on a 20 levels compensation plan. The commission distribution was built on the solana blockchain. The project has been live on the mainnet since july 2024.
-- **Social Media Platform** (Node.js, React.js, MongoDB, AWS) -- Built a social media platform where users can make posts and groups. users can like, comment and share post. Implement Websockets for real time posting and messaging. Built a secure Admin panel for monitoring and reporting of the app.
-
-- **Github Actions Pipeline with AWS ECS** (Github, AWS ECS, AWS Fargate, AWS ECR) -- I introduced the first pipeline workflow in my organization to create a docker image on a push to the main branch. The pipeline will run the test and build command before creating a new docker image and storing it in ECR. The ArgoCD will then monitor for new images, and when a new image is detected it would trigger the deployment of the image on the AWS ECS configuration.
+- Contributed to backend system with DeFi trading protocol focusing on decentralized asset trading and liquidity.
+- Dynamic frontend, real time state management, Redux and Redis. Custom react hooks and event loops with reactjs.
+- Backend codebase with MVC framework and microservices architecture with nodejs.
+- Integrated backend REST APIs with frontend.
 
 ## Education
 
-- BE Electronics Engineering, Mumbai University (2018 - 2024)
+- Mumbai University - Datta Meghe College of Engineering (DMCE), Mumbai — BE Bachelor of Electronics Engineering (Apr 2018 - May 2024)
 
-## Skills
+## Projects
 
-- **Devops:** Docker, Kubernetes, Github Actions, Jenkins, Linux, Bash, Shell scripting, ArgoCD
-- **Fullstack:** Node.js, React.js, MongoDB, MySQL, git, cursor, claude
-- **Monitoring:** Prometheus, Grafana, AWS CloudWatch
-- **Infra:** Kubernetes, PostgreSQL, AWS
-- **Languages:** Python, Javascript, TypeScript, SQL, Rust
+- **MySkillKart** (myskillkart.com) — Marketplace to buy and sell AI agent skills. Users download skills.md files and attach them to Claude Cowork, Cursor, Codex, and similar agents.
+- **Solana referral model with multi level commission** (Rust, Node.js, React.js, AWS) — Dapp with 20 levels compensation plan on Solana blockchain. Live on mainnet since July 2024.
+- **Custom DAO platform on Polygon** (Solidity, Ethers.js, Node.js, AWS) — DAO treasury and governance for community funding proposals.
+- **Solana Arbitrage & Liquidity Bot** (Rust, Node.js, React.js, AWS) — Arbitrage across Raydium, Orca, Meteora; liquidity management based on volume and yield.
+
+## Positions of Responsibility
+
+- Head of Blockchain — managed and led the blockchain team
+- Workshop Host — Solidity development workshops (2-day and 6-day)
+- Technical Head — IETE committee
+
+## Certifications
+
+- Blockchain A to Z: Blockchain Theory & Fundamentals
+- Hands-on Solidity Bootcamp
+- Complete MERN stack development course - React.js, Node.js & Firebase
